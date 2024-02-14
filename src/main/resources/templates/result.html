@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Getting Started: Handing Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../static/style.css" th:href="@{style.css}">
+</head>
+<body>
+<main>
+    <div class="starttext">
+        <h1>Result</h1>
+    </div>
+    <div class="maincheck">
+        <p class="result" th:text="'Name: ' + ${input.name}"></p>
+        <p class="result" th:text="'Surname: ' + ${input.surname}"></p>
+        <p class="result" th:text="'Passport: ' + ${input.passport}"></p>
+        <p class="result" th:text="'Sex: ' + ${input.sex}"></p>
+        <p class="result" th:text="'Inn: ' + ${input.inn}"></p>
+        <p class="result" th:text="'Snils: ' + ${input.snils}"></p>
+        <p class="result" th:text="'Salary: ' + ${input.salary}"></p>
+        <p class="result" th:text="'Sum_of_credit: ' + ${input.sum_of_credit}"></p>
+        <p class="result" th:text="'Result: ' + ${result}"></p>
+        <a class="link" href="/greeting">Проверить ещё раз</a>
+    </div>
+</main>
+</body>
+</html>
